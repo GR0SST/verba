@@ -1,44 +1,50 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output and caches
+dist/
+dist-ssr/
+build/
+coverage/
+.turbo/
+.vite/
+.eslintcache
+*.tsbuildinfo
+
+# Server data: SQLite, generated audio, covers, uploaded media, Codex login
+apps/api/data/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
-lerna-debug.log*
+pnpm-debug.log*
+bun-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# turbo
-.turbo
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# typescript
-*.tsbuildinfo
-
-# api storage
-apps/api/data
-
-# local test media: too large for GitHub (>100 MB) or not ours to redistribute
+# Local test assets: originals are too large for GitHub (>100 MB) or not ours to
+# redistribute. The player's bundled media lives in apps/web/public instead.
 /minecraft_parkour.mp4
 /ambient-background.mp3
-/book.epub
-apps/web/public/minecraft-parkour.mp4
-apps/web/public/ambient-background.mp3
-apps/web/public/book.epub
+*.epub
+
+# Claude Code local settings (launch.json stays shared)
+.claude/settings.local.json
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.sw?

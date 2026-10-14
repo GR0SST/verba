@@ -20,7 +20,7 @@
 - `apps/web` — Vite + React интерфейс
 - `apps/api` — Bun-сервер: API + раздача собранного фронтенда
 - `packages/ui` — общие shadcn/ui-компоненты и дизайн-токены
-- встроенный фон и эмбиент плеера — `apps/web/public/minecraft-parkour.mp4` и `apps/web/public/ambient-background.mp3`; в репозиторий не входят (слишком большие / чужие), положи свои файлы с этими именами или загрузи фоны и звуки в Settings → Player media
+- встроенный фон и эмбиент плеера — `apps/web/public/minecraft-parkour.mp4` (3 мин, 720×1280, обрезан под рамку 9:16) и `apps/web/public/ambient-background.mp3` (Pixabay); свои фоны и звуки загружаются в Settings → Player media
 
 ## Запуск
 
